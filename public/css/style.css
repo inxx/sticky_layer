@@ -1,12 +1,16 @@
 * { margin:0; padding:0; }
-.gnb { position:fixed; left:0; top:0;  width:100%; height:50px; min-width:1200px; line-height:50px; font-size:14px; text-align:center; color:#fff; background: #222; }
+.gnb { position:fixed; left:0; top:0;  width:100%; height:50px; min-width:1200px; line-height:50px; font-size:14px; text-align:center; color:#fff; background: #222; z-index:1; }
 .content { width:1200px;  margin:0 auto; padding:50px 0; overflow:hidden; }
 .footer { min-width:1200px; font-size:14px; color:#000; border-top:1px solid #ddd; padding:20px; text-align:center; }
 
-.module { width:100%; margin:20px 0; box-sizing: border-box; border:1px solid #ddd; text-align:center; font-size:14px; color:#000; }
+.module { width:850px; margin:20px 0; box-sizing: border-box; border:1px solid #ddd; text-align:center; font-size:14px; color:#000; background:#fff; }
 
 .module_type1 { padding:200px; }
 .module_type2 { padding:50px; }
 .module_type3 { padding:60px; }
 .module_type4 { padding:40px; }
 .module_type5 { padding:110px; }
+.module_type_sticky { position:absolute; top:0; padding:150px 0; width:330px; margin:0 0 20px -350px; background:#f1f1f1; }
+
+.content_sticky_wrap { position: relative;  padding-left:350px; }
+.content_sticky_wrap:before { display:block; clear:both; content:''; }
